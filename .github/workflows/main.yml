@@ -22,6 +22,6 @@ jobs:
         username: ${{secrets.DOCKER_HUB_USERNAME}}
         password: ${{secrets.DOCKER_HUB_ACCESS_TOKEN}}
     - name: Tag the image
-      run: docker tag simple-node samuelspagl/udagram-api-user
+      run: docker tag udagram-api-user samuelspagl/udagram-api-user
     - name: Push Docker image
       run: docker push samuelspagl/udagram-api-user
